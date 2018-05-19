@@ -15,9 +15,9 @@ def getImagesWithID(path):
         faceNp = np.array(faceImg,'uint8')
         ID = int(os.path.split(imagePath)[-1].split('_')[0])
         faces.append(faceNp)
-        print(ID)
+        #print(ID)
         IDs.append(ID)
-        cv2.imshow("trainning",faceNp)
+        # cv2.imshow("trainning",faceNp)
         cv2.waitKey(10)
     return np.array(IDs), faces
 
